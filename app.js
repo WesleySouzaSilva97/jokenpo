@@ -5,9 +5,11 @@
 
 function jogar() {
     //validação da obrigatoriedade escolha do jogador
-if(document.getElementById('pedra').cheked === false &&
-document.getElementById('papel').cheked === false &&
-document.getElementById('tesoura').cheked === false) {
+    //usamos o argumento checked para validar radion button e checked box
+if(document.getElementById('pedra').checked === false &&
+document.getElementById('papel').checked === false &&
+document.getElementById('tesoura').checked === false) {
+    alert("Selecione uma opção")
 }else {
     // logica principal
 }
