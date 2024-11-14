@@ -10,17 +10,23 @@
 <body>
     <h1>Jokenpo</h1>
     <h2>Jogador</h2>
-    <img src="img/pcpedra.png" alt="pedra">
-    <img src="img/pcpapel.png" alt="papel">
-    <img src="img/pctesoura.png" alt="tesoura">
+    <img src="img/pedra.png" alt="pedra">
+    <img src="img/papel.png" alt="papel">
+    <img src="img/tesoura.png" alt="tesoura">
     <form>
-        <input type="radio" name="pedra" id="pedra">
-        <input type="radio" name="papel" id="papel">
-        <input type="radio" name="tesoura" id="tesoura">
+        <input type="radio" name="escolha" id="pedra"> Pedra
+        <input type="radio" name="escolha" id="papel"> Papel
+        <input type="radio" name="escolha" id="tesoura"> Tesoura
+        <p>
+            <button onclick="jogar()"> JOGAR</button>
+            <input type="reset" value="RESET">
+        </p>
     </form>
-
-
-
+    <hr>
+    <h2>Computador</h2>
+    <img src="img/pc.png" alt="pc" id="pc">
+    <hr>
+    <h3 id="resultado"></h3>
     <script src="app.js"></script>
 </body>
 
